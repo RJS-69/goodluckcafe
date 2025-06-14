@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Delight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Café Delight</h1>
+    <p>Order your favorite food online!</p>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items" id="menu-items">
+      <!-- Food cards will appear here using JS -->
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: ₹<span id="total">0</span></p>
+    <button onclick="showOrderForm()">Place Order</button>
+  </section>
+
+  <section id="order-form" style="display: none;">
+  <h2>Order Form</h2>
+  <form id="orderForm">
+    <input type="text" name="Name" placeholder="Name" required><br>
+    <input type="tel" name="Phone" placeholder="Phone" required><br>
+    <input type="text" name="Address" placeholder="Address" required><br>
+    <input type="hidden" name="Order" id="orderSummary">
+    <input type="hidden" name="Total" id="orderTotal">
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
